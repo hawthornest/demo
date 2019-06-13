@@ -55,6 +55,7 @@ import org.springframework.web.bind.annotation.RestController;
                 helloWroldRes.setMultiplication(divTest.divResult(divisor,dividend));
                 helloWroldRes.setData(result);
                 helloWroldRes.setCode(200);
+                logger.error("test");
             }
             else
             {
