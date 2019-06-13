@@ -43,6 +43,9 @@ import org.springframework.web.bind.annotation.RestController;
             case 3:
                 helloWroldRes.setErrorMsg("input 3");
                 break;
+            case 4:
+                helloWroldRes.setErrorMsg("input 4");
+                break;
             default:
                 helloWroldRes.setErrorMsg("default"+errorMsg);
         }
