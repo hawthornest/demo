@@ -59,6 +59,7 @@ import org.springframework.web.bind.annotation.RestController;
                 helloWroldRes.setData(result);
                 helloWroldRes.setCode(200);
                 logger.error("test");
+                logger.info("test2");
             }
             else
             {
