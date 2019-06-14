@@ -23,6 +23,7 @@ public class DivTest extends Div{
         {
             result = divisor*dividend;
         }
+        logger.info("结束方法DivTest的divResult啦");
         return result;
     }
 }
