@@ -27,6 +27,7 @@ public class HelloWroldTest {
     public void divResult() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/yanxuan/test?divisor=132&dividend=1&errorMsg=test")).andExpect(MockMvcResultMatchers.status().isOk());
         mvc.perform(MockMvcRequestBuilders.get("/yanxuan/test?divisor=99999999&dividend=1&errorMsg=test")).andExpect(MockMvcResultMatchers.status().isOk());
+        mvc.perform(MockMvcRequestBuilders.get("/yanxuan/test?divisor=99999999&dividend=1&errorMsg=test132")).andExpect(MockMvcResultMatchers.status().isOk());
     }
 
 

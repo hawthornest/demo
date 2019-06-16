@@ -33,6 +33,30 @@ import org.springframework.web.bind.annotation.RestController;
     {
         logger.info("现在是第34行啦~~~");
         HelloWroldRes helloWroldRes = new HelloWroldRes();
+
+        if (dividend==123)
+        {
+            logger.info("进入dividend==123逻辑啦");
+        }
+
+        if (dividend==1234)
+        {
+            logger.info("进入dividend==1234逻辑啦");
+        }
+        else
+        {
+            logger.info("进入dividend!=1234逻辑啦");
+        }
+
+        if (errorMsg.equals("test"))
+        {
+            logger.info("进入errorMsg为test逻辑啦");
+        }
+        else
+        {
+            logger.info("进入errorMsg不为test逻辑啦");
+        }
+
         switch (divisor){
             case 1:
                 helloWroldRes.setErrorMsg("input 1");
